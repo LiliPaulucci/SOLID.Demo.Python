@@ -19,7 +19,8 @@ class ArabicToCardinalConverter(INumeralConverter):
         number = int(numeral)
 
         if number < 0 or number > 99:
-            raise Exception("Numbers should be Integers between 0 and 99.")
+            return "NotSupported: Numbers should be Integers between 0 and 99."
+            # raise Exception("Error: Numbers should be Integers between 0 and 99.")
 
         outcome_number = ""
 

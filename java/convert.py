@@ -11,10 +11,10 @@ if len(sys.argv) < 2:
 
 number = sys.argv[1]
 
-
-# Define abstract cache client factory:
+# Define abstract translator factory:
 translator_factory = providers.AbstractFactory(translators.ITranslator)
 
+# Define abstract converter factory:
 converter_factory = providers.AbstractFactory(converters.INumeralConverter)
 
 if __name__ == '__main__':
